@@ -6,9 +6,6 @@ x="'"+x+"'"
 yt=YouTube(x)
 print("")
 print(yt.title)
-some_video=yt.streams.first()
-
-
-some_video.download()
+yt.streams.first().download()
 print("")
 print("Download Successful !!")
